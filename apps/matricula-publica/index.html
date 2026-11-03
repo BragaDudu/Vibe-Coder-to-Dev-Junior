@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrícula — Instituto Horizonte de Idiomas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="school-logo" aria-hidden="true">IH</span>
+      <span class="school-name">Instituto Horizonte de Idiomas</span>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="hero">
+      <span class="badge">Matrículas abertas · 1º semestre 2027</span>
+      <h1>Fale inglês com confiança em 2027</h1>
+      <p class="hero-text">
+        Turmas reduzidas, professores certificados e aulas presenciais ou online.
+        Garanta sua vaga com condição especial até 30/11.
+      </p>
+      <ul class="benefits">
+        <li>Até 8 alunos por turma</li>
+        <li>Material didático incluso</li>
+        <li>Aula experimental gratuita</li>
+      </ul>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200" alt="Alunos estudando em grupo">
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Faça sua pré-matrícula</h2>
+      <p class="card-subtitle">Leva menos de 2 minutos. A secretaria entra em contato pelo WhatsApp.</p>
+
+      <form id="enrollment-form" novalidate>
+        <div class="field">
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" name="name" placeholder="Como está no seu documento" required>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+          </div>
+          <div class="field">
+            <label for="whatsapp">WhatsApp</label>
+            <input type="tel" id="telefone" name="phone" placeholder="(11) 91234-5678" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="birthdate">Data de nascimento</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+          </div>
+          <div class="field">
+            <label for="course">Curso</label>
+            <select id="course" name="course" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <legend>Turno de preferência</legend>
+          <div class="radio-group">
+            <label class="radio"><input type="radio" name="shift" value="manha" required> Manhã</label>
+            <label class="radio"><input type="radio" name="shift" value="tarde"> Tarde</label>
+            <label class="radio"><input type="radio" name="shift" value="noite"> Noite</label>
+            <label class="radio"><input type="radio" name="shift" value="online"> Online</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="source">Como conheceu a escola?</label>
+          <select id="source" name="source">
+            <option value="">Selecione</option>
+            <option value="instagram">Instagram</option>
+            <option value="google">Google</option>
+            <option value="indicacao">Indicação de amigo</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" id="consent" name="consent" required>
+          <span>
+            Concordo com o uso dos meus dados para contato sobre a matrícula, conforme a
+            <a href="#" target="_blank" rel="noopener">Política de Privacidade</a>.
+          </span>
+        </label>
+
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+
+        <button type="submit" class="btn-submit">Quero me matricular</button>
+      </form>
+
+      <div class="success" id="success" hidden>
+        <h3>Pré-matrícula enviada! 🎉</h3>
+        <p>Em breve a secretaria do Instituto Horizonte vai falar com você pelo WhatsApp.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Página de matrícula fornecida por <strong>Turmalina</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

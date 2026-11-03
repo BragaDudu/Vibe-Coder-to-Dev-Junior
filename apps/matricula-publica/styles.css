@@ -1,0 +1,287 @@
+/* ==========================================================
+   Página pública de matrícula — Turmalina
+   Versão MVP (freelancer, out/2025). Não temos dono oficial
+   deste arquivo desde então. Mexa com cuidado.
+   ========================================================== */
+
+:root {
+  --color-primary: #0f766e;
+  --color-primary-dark: #115e59;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+  --color-border: #d1d5db;
+  --color-bg: #f3f4f6;
+  --color-white: #ffffff;
+  --color-error: #b91c1c;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.5;
+}
+
+/* ---------- Topbar ---------- */
+
+.topbar {
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.school-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-name {
+  font-weight: 600;
+}
+
+/* ---------- Layout ---------- */
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.hero {
+  flex: 1;
+  min-width: 480px;
+}
+
+.badge {
+  display: inline-block;
+  background: #ccfbf1;
+  color: var(--color-primary-dark);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  color: var(--color-muted);
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.benefits li {
+  padding-left: 28px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+/* ---------- Card / formulário ---------- */
+
+.card {
+  width: 560px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.card-subtitle {
+  color: var(--color-muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .field {
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 18px;
+  border: none;
+}
+
+.field label,
+.field legend {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-white);
+}
+
+.field input:focus,
+.field select:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: transparent;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-group .radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-top: 3px;
+}
+
+.checkbox a {
+  color: var(--color-primary);
+}
+
+.form-error {
+  color: var(--color-error);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.success h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 13px;
+  padding: 24px;
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 768) {
+  .wrapper {
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
