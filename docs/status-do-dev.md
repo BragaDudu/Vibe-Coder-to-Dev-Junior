@@ -13,7 +13,7 @@
 
 | Ticket | Título | Prioridade | Prazo | Status |
 |---|---|---|---|---|
-| [TUR-147](tickets/TUR-147.md) | Página de matrícula quebrada no celular | 🔴 Alta | 05/11/2026 | Em andamento — layout corrigido; falta zoom no iOS e PR |
+| [TUR-147](tickets/TUR-147.md) | Página de matrícula quebrada no celular | 🔴 Alta | 05/11/2026 | Em andamento — critérios atendidos; falta abrir o PR |
 
 ## Backlog conhecido (pode cair para você no futuro)
 
@@ -42,3 +42,4 @@
 
 - **03/11/2026** — Primeiro dia. Onboarding feito. Recebeu a TUR-147.
 - **03/11/2026** — Setup de Git feito (criou a `main` e trocou a branch padrão). Na TUR-147, pediu para a IA implementar a correção de layout (uma coluna < 1200px, duas ≥ 1200px, border-box). Critério do zoom no iOS ainda em aberto.
+- **03/11/2026** — A pedido do dev, a IA também deixou o formulário em uma coluna abaixo de 1200px, corrigiu o zoom no iOS (fonte 16px) e o label do WhatsApp. Próximo passo: PR com prints e explicação da causa.
