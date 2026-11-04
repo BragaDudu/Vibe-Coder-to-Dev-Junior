@@ -23,6 +23,10 @@
 - TUR-131 — Tela de turmas lenta para escolas grandes.
 - TUR-160 — Falsos positivos no Radar de Evasão.
 
+## Projeto de estudo
+
+- [Portal do Aluno (mini)](projeto-portal-do-aluno.md) — combinado em 04/11/2026. Fase atual: 1 (não iniciada).
+
 ## Histórico de avaliações
 
 | Data | Ticket | Funcionamento | Organização | Legibilidade | Boas práticas | Resolução | Investigação | Independência | Comunicação | Resultado |
@@ -57,3 +61,4 @@
 - **03/11/2026** — Editou a descrição do PR #1 (review 2): listou as causas, incluiu label/autocomplete, reescreveu "Decisões" com as próprias palavras e desmarcou o checklist. Ainda faltam: justificar o breakpoint, "Como testar" específico, tabela de prints e as 4 perguntas.
 - **04/11/2026** — Dev decidiu encerrar a TUR-147 e evoluir a escrita de PR nos próximos tickets. A descrição do PR no GitHub não mostrou mudanças após a review 2 (última edição em 03/11, 20:03). Rafael aprovou com ressalvas pela urgência do cliente; liberado para fazer o merge.
 - **04/11/2026** — Fez o merge do PR #1 (TUR-147 em produção). Daily: respondeu o que fez/vai fazer/bloqueios focando no impacto para o cliente (bom), mas disse que "construiu e codou" a TUR-147 (implementação foi da IA) e não respondeu as 4 perguntas pela 2ª vez. Prazo para as perguntas: antes do review da TUR-155. Recebeu a TUR-155 (validação de campos em JS puro). Combinado: investigar antes de pedir para a IA.
+- **04/11/2026** — Pediu ao Rafael um projeto completo (front, back, banco, API, JWT). Combinado o Portal do Aluno (mini) como projeto de estudo, fora do horário dos tickets.
