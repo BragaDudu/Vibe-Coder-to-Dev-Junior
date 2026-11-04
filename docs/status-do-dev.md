@@ -13,7 +13,7 @@
 
 | Ticket | Título | Prioridade | Prazo | Status |
 |---|---|---|---|---|
-| [TUR-147](tickets/TUR-147.md) | Página de matrícula quebrada no celular | 🔴 Alta | 05/11/2026 | Em revisão — [PR #1](https://github.com/BragaDudu/Vibe-Coder-to-Dev-Junior/pull/1): alterações solicitadas na descrição |
+| [TUR-147](tickets/TUR-147.md) | Página de matrícula quebrada no celular | 🔴 Alta | 05/11/2026 | 🟢 Aprovado com ressalvas — [PR #1](https://github.com/BragaDudu/Vibe-Coder-to-Dev-Junior/pull/1), aguardando merge |
 
 ## Backlog conhecido (pode cair para você no futuro)
 
@@ -27,6 +27,7 @@
 | Data | Ticket | Funcionamento | Organização | Legibilidade | Boas práticas | Resolução | Investigação | Independência | Comunicação | Resultado |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 03/11/2026 | TUR-147 (review 1) | 5 | n/a* | n/a* | n/a* | 4 | 2 | 2 | 2 | 🟡 Alterações solicitadas |
+| 04/11/2026 | TUR-147 (final) | 5 | n/a* | n/a* | n/a* | 4 | 2 | 2 | 2 | 🟢 Aprovado com ressalvas |
 
 > Escala: 1 (insuficiente) a 5 (excelente).
 > \* Código implementado pela IA a pedido do dev — organização, legibilidade e boas práticas não refletem o trabalho dele.
@@ -43,6 +44,8 @@
 - Escrita técnica: "Como testar" vago, descrição incompleta, texto copiado da conversa.
 - Fluxo de Git: criar branch antes de trabalhar; `git status` antes de `push`/`checkout`.
 - Independência: delegou a implementação inteira para a IA no primeiro ticket.
+- Pendente: as 4 perguntas de entendimento da TUR-147 (media query sem unidade, cálculo com/sem border-box, mobile first com min-width, fonte de 16px no iOS). Retomar na próxima daily.
+- Meta para os próximos PRs: "Por que" com causa e consequência, "Como testar" reproduzível, prints identificados por largura, texto sem gírias nem exclamações.
 
 ## Diário
 
@@ -51,3 +54,4 @@
 - **03/11/2026** — A pedido do dev, a IA também deixou o formulário em uma coluna abaixo de 1200px, corrigiu o zoom no iOS (fonte 16px) e o label do WhatsApp. Próximo passo: PR com prints e explicação da causa.
 - **03/11/2026** — Abriu o PR #1. Review 1: código aprovado no funcionamento, mas descrição do PR com alterações solicitadas (causa incompleta, sem justificativa do breakpoint, como testar vago, tabela de prints quebrada, checklist marcado sem conferir). Enviadas 4 perguntas de verificação de entendimento.
 - **03/11/2026** — Editou a descrição do PR #1 (review 2): listou as causas, incluiu label/autocomplete, reescreveu "Decisões" com as próprias palavras e desmarcou o checklist. Ainda faltam: justificar o breakpoint, "Como testar" específico, tabela de prints e as 4 perguntas.
+- **04/11/2026** — Dev decidiu encerrar a TUR-147 e evoluir a escrita de PR nos próximos tickets. A descrição do PR no GitHub não mostrou mudanças após a review 2 (última edição em 03/11, 20:03). Rafael aprovou com ressalvas pela urgência do cliente; liberado para fazer o merge.
