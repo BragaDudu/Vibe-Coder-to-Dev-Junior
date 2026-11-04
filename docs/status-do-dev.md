@@ -7,13 +7,14 @@
 - **Cargo:** Desenvolvedor Júnior
 - **Início:** terça, 03/11/2026
 - **Mentor:** Thiago Nunes (Dev Sênior)
-- **Nível atual das tarefas:** 1 — HTML/CSS/JS e fluxo de Git/PR
+- **Nível atual das tarefas:** 2 — JavaScript e manipulação de DOM
 
 ## Quadro de tarefas
 
 | Ticket | Título | Prioridade | Prazo | Status |
 |---|---|---|---|---|
-| [TUR-147](tickets/TUR-147.md) | Página de matrícula quebrada no celular | 🔴 Alta | 05/11/2026 | 🟢 Aprovado com ressalvas — [PR #1](https://github.com/BragaDudu/Vibe-Coder-to-Dev-Junior/pull/1), aguardando merge |
+| [TUR-147](tickets/TUR-147.md) | Página de matrícula quebrada no celular | 🔴 Alta | 05/11/2026 | ✅ Concluído — [PR #1](https://github.com/BragaDudu/Vibe-Coder-to-Dev-Junior/pull/1) mergeado em 04/11 |
+| [TUR-155](tickets/TUR-155.md) | Validação dos campos da pré-matrícula | 🟠 Média-alta | 06/11/2026 | A fazer |
 
 ## Backlog conhecido (pode cair para você no futuro)
 
@@ -55,3 +56,4 @@
 - **03/11/2026** — Abriu o PR #1. Review 1: código aprovado no funcionamento, mas descrição do PR com alterações solicitadas (causa incompleta, sem justificativa do breakpoint, como testar vago, tabela de prints quebrada, checklist marcado sem conferir). Enviadas 4 perguntas de verificação de entendimento.
 - **03/11/2026** — Editou a descrição do PR #1 (review 2): listou as causas, incluiu label/autocomplete, reescreveu "Decisões" com as próprias palavras e desmarcou o checklist. Ainda faltam: justificar o breakpoint, "Como testar" específico, tabela de prints e as 4 perguntas.
 - **04/11/2026** — Dev decidiu encerrar a TUR-147 e evoluir a escrita de PR nos próximos tickets. A descrição do PR no GitHub não mostrou mudanças após a review 2 (última edição em 03/11, 20:03). Rafael aprovou com ressalvas pela urgência do cliente; liberado para fazer o merge.
+- **04/11/2026** — Fez o merge do PR #1 (TUR-147 em produção). Daily: as 4 perguntas da TUR-147 foram cobradas. Recebeu a TUR-155 (validação de campos em JS puro). Combinado: investigar antes de pedir para a IA.
